@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package Person;
+
+// The greeting service definition.
+service Personer {
+  // Sends a greeting
+  rpc GetPerson (PersonRequest) returns (PersonReply) {}
+}
+
+// The request message containing the user's name.
+message PersonRequest {
+  string id = 1;
+}
+
+// The response message containing the greetings.
+message PersonReply {
+  string name = 1;
+}
